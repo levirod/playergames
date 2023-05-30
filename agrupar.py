@@ -23,4 +23,4 @@ planilha_atualizada = planilha_atualizada.drop(['CFOP_y', 'CEST_y'], axis=1)
 # Salvar a planilha atualizada em um novo arquivo
 planilha_atualizada.to_excel(r'C:\Users\venda\OneDrive\Área de Trabalho\Resolver Planilha\planilha1_atualizada.xlsx', index=False)
 
-#modificação nova2
+#modificação nova23
