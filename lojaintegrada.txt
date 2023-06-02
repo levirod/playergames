@@ -1,3 +1,15 @@
-NOME (CAIXA ALTA PRIMEIRA LETRA)
-ESTOQUE
-PREÇO
+NOME (CAIXA ALTA PRIMEIRA LETRA) 1
+ESTOQUE 13
+PREÇO 11
+CODIGO INTERNO = SKU 2
+CÓDIGO DE BARRA = GTIN 3
+NCM = NCM 5
+
+ORDEM
+
+REDUZIR COLUNAS COM resolveplanilha.py
+REMOVER NOME DAS LOJAS COM resolvepalavara.py
+AGRUPAR agrupar.py
+Capitalização das Letras maiusculo.py
+ENVIAR PARA O TEMPLATE modelarparatemplate.py
+

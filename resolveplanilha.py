@@ -6,7 +6,7 @@ def manter_colunas(planilha, colunas_manter):
         planilha.delete_cols(coluna)
 
 # Abrir o arquivo do Excel
-arquivo_excel = r'C:\Users\venda\OneDrive\Área de Trabalho\Resolver Planilha\planilha.xlsx'
+arquivo_excel = r'C:\Users\venda\OneDrive\Área de Trabalho\Resolver Planilha\estoque.xlsx'
 workbook = openpyxl.load_workbook(arquivo_excel)
 
 # Selecionar a planilha
@@ -20,13 +20,13 @@ except KeyError:
     exit()
 
 # Especificar as colunas a serem mantidas
-colunas_manter = [1, 5, 19, 23]  # Substitua pelos índices das colunas que deseja manter
+colunas_manter = [1, 2, 3, 5, 11, 13]  # Substitua pelos índices das colunas que deseja manter
 
 # Chamar a função para manter apenas as colunas desejadas
 manter_colunas(planilha, colunas_manter)
 
 # Salvar as modificações no arquivo
-arquivo_modificado = r'C:\Users\venda\OneDrive\Área de Trabalho\Resolver Planilha\planilha_simplificada.xlsx'
+arquivo_modificado = r'C:\Users\venda\OneDrive\Área de Trabalho\Resolver Planilha\estoque_simplificada.xlsx'
 workbook.save(arquivo_modificado)
 
 # Fechar o arquivo do Excel
