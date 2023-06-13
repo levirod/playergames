@@ -11,6 +11,8 @@ def modificar_planilha(nome_arquivo):
     planilha['destaque'] = 'N'
     planilha['estoque-gerenciado'] = 'S'
     planilha['estoque-situacao-em-estoque'] = 'imediata'
+    planilha['estoque-situacao-sem-estoque'] = 'indisponivel'
+    planilha['preco-sob-consulta'] = 'N'
     
     # Salvar as modificações no arquivo
     planilha.to_excel(nome_arquivo, index=False)
@@ -18,5 +20,5 @@ def modificar_planilha(nome_arquivo):
     print("Modificações concluídas.")
 
 # Exemplo de uso
-arquivo = r'C:\Users\venda\OneDrive\Área de Trabalho\Resolver Planilha\teste_preenchido.xlsx'  # Substitua pelo caminho correto do seu arquivo
+arquivo = 'paraosite.xlsx'  # Substitua pelo caminho correto do seu arquivo
 modificar_planilha(arquivo)

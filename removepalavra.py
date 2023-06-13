@@ -11,11 +11,11 @@ def remover_palavras(planilha, palavras_remover):
         contador_linha += 1
 
 # Abrir o arquivo do Excel
-arquivo_excel = r'C:\Users\venda\OneDrive\Área de Trabalho\Resolver Planilha\estoque_simplificada.xlsx'
+arquivo_excel = 'planilha_tagplus.xlsx'
 workbook = openpyxl.load_workbook(arquivo_excel)
 
 # Selecionar a planilha
-nome_planilha = 'Worksheet'
+nome_planilha = 'Sheet1'
 
 try:
     planilha = workbook[nome_planilha]
@@ -31,7 +31,7 @@ palavras_remover = ['ADRIANOPOLIS - ', 'ASSISTÊNCIA CONSOLE - ', 'CANAL DIGITAL
 remover_palavras(planilha, palavras_remover)
 
 # Salvar as modificações no arquivo
-arquivo_modificado = r'C:\Users\venda\OneDrive\Área de Trabalho\Resolver Planilha\estoque_semlojas.xlsx'
+arquivo_modificado = 'planilha_tagplus.xlsx'
 workbook.save(arquivo_modificado)
 
 # Fechar o arquivo do Excel

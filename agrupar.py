@@ -5,7 +5,7 @@ import locale
 locale.setlocale(locale.LC_ALL, '')
 
 # Carregar a planilha
-planilha = pd.read_excel(r'C:\Users\venda\OneDrive\Área de Trabalho\Resolver Planilha\estoque_semlojas.xlsx')
+planilha = pd.read_excel('planilha_tagplus.xlsx')
 
 # Converter a coluna "Quantidade em estoque" para numérico
 planilha['Quantidade em estoque'] = planilha['Quantidade em estoque'].apply(
@@ -23,4 +23,4 @@ planilha_agrupada = planilha.groupby('Descrição do Produto').agg({
 }).reset_index()
 
 # Salvar a planilha atualizada
-planilha_agrupada.to_excel(r'C:\Users\venda\OneDrive\Área de Trabalho\Resolver Planilha\estoque_agrupado.xlsx', index=False)
+planilha_agrupada.to_excel('planilha_tagplus.xlsx', index=False)

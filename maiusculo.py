@@ -2,7 +2,7 @@ import openpyxl
 
 def alterar_primeira_letra_maiusculo(coluna):
     # Abre o arquivo do Excel
-    caminho_arquivo = r'C:\Users\venda\OneDrive\Área de Trabalho\Resolver Planilha\estoque_agrupado.xlsx'  # Substitua pelo caminho do seu arquivo Excel
+    caminho_arquivo = 'planilha_tagplus.xlsx'  # Substitua pelo caminho do seu arquivo Excel
     livro = openpyxl.load_workbook(caminho_arquivo)
 
     # Seleciona a planilha desejada

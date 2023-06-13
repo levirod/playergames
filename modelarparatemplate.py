@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Ler a primeira planilha
-planilha1 = pd.read_excel(r'C:\Users\venda\OneDrive\Área de Trabalho\Resolver Planilha\estoque_agrupado.xlsx')
+planilha1 = pd.read_excel('planilha_tagplus.xlsx')
 
 # Mapear os nomes das colunas
 mapeamento_colunas = {
@@ -17,7 +17,7 @@ mapeamento_colunas = {
 planilha1.rename(columns=mapeamento_colunas, inplace=True)
 
 # Ler a segunda planilha
-planilha2 = pd.read_excel(r'C:\Users\venda\OneDrive\Área de Trabalho\Resolver Planilha\planilha-modelo.xlsx')
+planilha2 = pd.read_excel('planilha-modelo.xlsx')
 
 # Preencher a segunda planilha com os valores correspondentes da primeira planilha
 planilha2['nome'] = planilha1['nome']
@@ -28,4 +28,4 @@ planilha2['preco-cheio'] = planilha1['preco-cheio']
 planilha2['ncm'] = planilha1['ncm']
 
 # Salvar a segunda planilha com as colunas preenchidas
-planilha2.to_excel(r'C:\Users\venda\OneDrive\Área de Trabalho\Resolver Planilha\teste_preenchido.xlsx', index=False)
+planilha2.to_excel('paraosite.xlsx', index=False)
