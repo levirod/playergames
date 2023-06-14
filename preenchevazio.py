@@ -14,6 +14,7 @@ def modificar_planilha(nome_arquivo):
     planilha['estoque-situacao-sem-estoque'] = 'indisponivel'
     planilha['preco-sob-consulta'] = 'N'
     
+
     # Salvar as modificações no arquivo
     planilha.to_excel(nome_arquivo, index=False)
     
